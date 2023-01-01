@@ -1,0 +1,28 @@
+{
+  "name": "gym-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/css/output.css",
+    "watch": "npx tailwindcss -i ./src/input.css -o ./src/css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/georgeboholteanu/gym-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/georgeboholteanu/gym-app/issues"
+  },
+  "homepage": "https://github.com/georgeboholteanu/gym-app#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "flowbite": "^1.5.5",
+    "tw-elements": "^1.0.0-alpha13"
+  }
+}
