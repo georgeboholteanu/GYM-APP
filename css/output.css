@@ -962,28 +962,16 @@ input[type="range"]::-ms-fill-lower {
   height: 21.1875rem;
 }
 
-.h-\[25rem\] {
-  height: 25rem;
+.h-\[28rem\] {
+  height: 28rem;
 }
 
 .h-auto {
   height: auto;
 }
 
-.h-\[26rem\] {
-  height: 26rem;
-}
-
-.h-\[28rem\] {
-  height: 28rem;
-}
-
-.h-\[2rem\] {
-  height: 2rem;
-}
-
-.h-\[27rem\] {
-  height: 27rem;
+.h-\[25rem\] {
+  height: 25rem;
 }
 
 .w-full {
@@ -1178,10 +1166,6 @@ input[type="range"]::-ms-fill-lower {
 
 .pb-12 {
   padding-bottom: 3rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
 }
 
 .text-center {
