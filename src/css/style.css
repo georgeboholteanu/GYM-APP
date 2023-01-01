@@ -6,17 +6,14 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     outline: none;
-}
-
-:root{
-    
-}
-
-body{
-    background-color: #131b2b;
 } */
 
-/* .navbar{
+
+/* body{
+    background-color: #131b2b;
+}
+
+ .navbar{
     width: 100vh;
     display: flex;
     position: fixed;
@@ -35,4 +32,4 @@ body{
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
-} */
+}  */
