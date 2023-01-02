@@ -10,10 +10,6 @@
     
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="./css/output.css">
-        <!-- component -->
-    <!-- <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
-    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"> -->
-
 
     <!-- Flowbite CDN -->
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css">
@@ -25,39 +21,108 @@
 </head>
 <body>
 
-<!-- component -->
-<header class="header sticky top-0 bg-black shadow-md flex items-center justify-between px-8 py-2 z-50">
-    <!-- logo -->
-    <h1>
-          <span class="text-white pt-4 pl-4 h-8 font-bold text-3xl">BEST</span>
-          <span class="text-gray-300 pt-4 pl-2 h-8 font-thin text-3xl ">FITNESS</span>
-          <span class="text-orange-400 pt-4 pl-2 h-8 font-bold text-3xl">G</span>
-          <span class="text-white pt-4 h-8 font-bold text-3xl">YM</span>
-    </h1>
-
+<!-- HEADER -->
+<header>
     <!-- navigation -->
-    <nav class="nav font-semibold text-lg">
-        <ul class="flex items-center">
-            <li class="p-4 border-b-2 text-white border-orange-500 border-opacity-0 hover:border-opacity-100 hover:text-orange-500 duration-200 cursor-pointer active">
-              <a href="#">Home</a>
-            </li>
-            <li class="p-4 border-b-2 text-white border-orange-500 border-opacity-0 hover:border-opacity-100 hover:text-orange-500 duration-200 cursor-pointer">
-              <a href="#antrenori">Antrenori</a>
-            </li>
-            <li class="p-4 border-b-2 text-white border-orange-500 border-opacity-0 hover:border-opacity-100 hover:text-orange-500 duration-200 cursor-pointer">
-              <a href="#abonamente">Abonamente</a>
-            </li>
-            <li class="p-4 border-b-2 text-white border-orange-500 border-opacity-0 hover:border-opacity-100 hover:text-orange-500 duration-200 cursor-pointer">
-                <a href="#servicii">Servicii</a>
-            </li>
-            <li class="p-4 border-b-2 text-white border-orange-500 border-opacity-0 hover:border-opacity-100 hover:text-orange-500 duration-200 cursor-pointer">
-                <a href="#galerie">Galerie</a>
-            </li>
-            <li class="p-4 border-b-2 text-white border-orange-500 border-opacity-0 hover:border-opacity-100 hover:text-orange-500 duration-200 cursor-pointer">
-              <a href="#contact">Contact</a>
-            </li>
-        </ul>
+    <nav class="relative px-4 py-4 flex justify-between items-center bg-black">
+        <div id="logo" class="absolute flex top-0 left-10 -my-5">           
+            <p class="text-white pt-4 pl-4 h-8 font-bold text-3xl">BEST</p>
+            <p class="text-gray-300 pt-4 pl-2 h-8 font-thin text-3xl ">FITNESS</p>
+            <p class="text-orange-400 pt-4 pl-2 h-8 font-bold text-3xl">G</p>
+            <p class="text-white pt-4 h-8 font-bold text-3xl">YM</p>
+        </div>       
+
+		<ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+          
+            <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#">Home</a></li>
+			<li class="text-gray-300">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			</li>
+			<li><a class="text-sm text-blue-600 font-bold" href="#antrenori">Antrenori</a></li>
+			<li class="text-gray-300">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			</li>
+			<li><a class="text-sm text-gray-400 hover:text-gray-500" href="#abonamente">Abonamente</a></li>
+			<li class="text-gray-300">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			</li>
+			<li><a class="text-sm text-gray-400 hover:text-gray-500" href="#servicii">Servicii</a></li>
+			<li class="text-gray-300">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			</li>
+            <li><a class="text-sm text-gray-400 hover:text-gray-500" href="#galerie">Galerie</a></li>
+			<li class="text-gray-300">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			</li>
+			<li><a class="text-sm text-gray-400 hover:text-gray-500" href="#contact">Contact</a></li>
+		</ul>
+
+	</nav>
+	<div class="navbar-menu relative z-50 hidden">
+    <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+    <!-- mobile menu -->
+    <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-black border-r overflow-y-auto">
+        <div class="flex items-center mb-8">
+            <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                <svg class="h-12" alt="logo" viewBox="0 0 100 100">
+                    <path d="M100 34.2c-.4-2.6-3.3-4-5.3-5.3-3.6-2.4-7.1-4.7-10.7-7.1-8.5-5.7-17.1-11.4-25.6-17.1-2-1.3-4-2.7-6-4-1.4-1-3.3-1-4.8 0-5.7 3.8-11.5 7.7-17.2 11.5L5.2 29C3 30.4.1 31.8 0 34.8c-.1 3.3 0 6.7 0 10v16c0 2.9-.6 6.3 2.1 8.1 6.4 4.4 12.9 8.6 19.4 12.9 8 5.3 16 10.7 24 16 2.2 1.5 4.4 3.1 7.1 1.3 2.3-1.5 4.5-3 6.8-4.5 8.9-5.9 17.8-11.9 26.7-17.8l9.9-6.6c.6-.4 1.3-.8 1.9-1.3 1.4-1 2-2.4 2-4.1V37.3c.1-1.1.2-2.1.1-3.1 0-.1 0 .2 0 0zM54.3 12.3L88 34.8 73 44.9 54.3 32.4V12.3zm-8.6 0v20L27.1 44.8 12 34.8l33.7-22.5zM8.6 42.8L19.3 50 8.6 57.2V42.8zm37.1 44.9L12 65.2l15-10.1 18.6 12.5v20.1zM50 60.2L34.8 50 50 39.8 65.2 50 50 60.2zm4.3 27.5v-20l18.6-12.5 15 10.1-33.6 22.4zm37.1-30.5L80.7 50l10.8-7.2-.1 14.4z"></path>
+                </svg>
+            </a>
+            <button class="navbar-close">
+                <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <div>    			
+                        
+            <div id="logoMobile" class="absolute flex top-10 left-5 -my-5">            
+        
+                <p class="text-white pt-4 pl-4 h-8 font-bold text-3xl">BEST</p>
+                <p class="text-gray-300 pt-4 pl-2 h-8 font-thin text-3xl ">FITNESS</p>
+                <p class="text-orange-400 pt-4 pl-2 h-8 font-bold text-3xl">G</p>
+                <p class="text-white pt-4 h-8 font-bold text-3xl">YM</p>
+       
+            </div>       
+            <ul>
+                <li class="mb-1">
+                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Home</a>
+                </li>
+                <li class="mb-1">
+                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#antrenori">Antrenori</a>
+                </li>
+                <li class="mb-1">
+                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#abonamente">Abonamente</a>
+                </li>
+                <li class="mb-1">
+                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#servicii">Servicii</a>
+                </li>
+                <li class="mb-1">
+                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#galerie">Galerie</a>
+                </li>
+                <li class="mb-1">
+                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mt-auto">
+            
+            <p class="my-4 text-xs text-center text-gray-400">
+                <span>Copyright © Best Fitness Gym 2023</span>
+            </p>
+        </div>
     </nav>
+    
 </header>
   
 <main class="w-full bg-gray-800">
@@ -67,7 +132,6 @@
         <div class="overflow-hidden relative sm:h-64 xl:h-80 2xl:h-96">
             <!-- Item 1 -->
             <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <!-- <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First Slide</span> -->
                 <img src="./images/pexels-andrea-piacquadio-3768695.jpg" alt="...">
             </div>
             <!-- Item 2 -->
@@ -101,46 +165,25 @@
     </div>
 
     <!-- PARTENERI -->
-    <div class="inline-flex w-full h-20 bg-black">        
-        <div class="flex w-40 justify-center text-center">
-            <p class="text-gray-200 font-bold text-xl m-5">PARTENERI</p>
+    <!-- <div class="flex w-full bg-black">        
+        <div class="justify-center text-center">
+            <p class="text-gray-200 font-bold text-lg m-5">PARTENERI</p>
         </div>   
             
         <div style="border-left: 6px solid orange; height: 5rem;">
         </div>    
                         
-            <div class="flex">
-                <img class="m-5" src="./images/Myprotein_logo.png" alt="">
-                <img class="m-5" src="./images/technogym-logo-vector.png" alt="">
-                <img class="m-5" src="./images/Huel_Official_Logo.png" alt="">
-                <img class="m-5" src="./images/logo_sport nutrition Olimp.png" alt="">
-                <img class="m-5" src="./images/Huel_Official_Logo.png" alt="">
-                <img class="m-5" src="./images/technogym-logo-vector.png" alt="">
-                <img class="m-5" src="./images/Myprotein_logo.png" alt="">
-            </div>
-    </div>
-    
-    <!-- <section> -->
-        <!-- Glow -->
-        <!-- <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
-            <svg class="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill="url(#45de2b6b-92d5-4d68-a6a0-9b9b2abad533)" fill-opacity=".3" d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" />
-            <defs>
-                <linearGradient id="45de2b6b-92d5-4d68-a6a0-9b9b2abad533" x1="1155.49" x2="-78.208" y1=".177" y2="474.645" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#9089FC"></stop>
-                <stop offset="1" stop-color="#FF80B5"></stop>
-                </linearGradient>
-            </defs>
-            </svg>
-        </div> -->
-    <!-- </section> -->
+        <div class="inline-flex max-h-20">
+            <img class="m-5 object-scale-down" src="./images/technogym-logo-vector.png" alt="">
+            <img class="m-5 object-scale-down" src="./images/Huel_Official_Logo.png" alt="">
+            <img class="m-5 object-scale-down" src="./images/Myprotein_logo.png" alt="">
+            <img class="m-5 object-scale-down" src="./images/logo_sport nutrition Olimp.png" alt="">
+        </div>
+    </div> -->
    
     <!-- ANTRENORI -->
-    <section id="antrenori" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
+    <section id="antrenori" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">       
         <div class="text-center pb-12">
-            <!-- <h2 class="text-base font-bold text-indigo-600">
-                Despre noi
-            </h2> -->
             <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-white">
                 Antrenori Personali            
             </h1>
@@ -437,7 +480,7 @@
     
     <div class="flex text-left lg:text-left">
       <div class="w-full lg:w-6/12 px-4">
-        <h4 class="text-2xl fonat-semibold text-blueGray-700">Unde ne gasiti online</h4>
+        <h4 class="text-xl fonat-semibold text-blueGray-700">Unde ne gasiti online</h4>
        
         <div class="mt-6 lg:mb-0 mb-6">
             <button class="bg-white hover:text-orange-400 text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
@@ -460,7 +503,7 @@
                 <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block p-2 text-sm hover:text-orange-400" href="https://barbend.com/best-supplements-for-muscle-growth/">Suplimente</a>
               </li>
               <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block p-2 text-sm hover:text-orange-400" href="https://www.nutritionist-resource.org.uk/articles/sports-nutrition.html#:~:text=Sports%20nutrition%20is%20the%20study,and%20aid%20in%20sports%20recovery.">Sport si nutritie</a>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block p-2 text-sm hover:text-orange-400" href="https://www.nutritionist-resource.org.uk/articles/sports-nutrition.html#:~:text=Sports%20nutrition%20is%20the%20study,and%20aid%20in%20sports%20recovery.">Nutritie</a>
               </li>
               <li>
                 <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block p-2 text-sm hover:text-orange-400" href="https://www.eatingwell.com/recipes/18045/weight-loss-diet/">Diete</a>
@@ -486,12 +529,16 @@
   </div>
 
 </footer>
-    
+
+ <!-- JS BURGER MENU -->
+<script src="./js/index.js"></script>
+
 <!-- JS Flowbite -->
 <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
 
 <!-- JS ICONS -->
 <script src="https://kit.fontawesome.com/4a2812a7e8.js" crossorigin="anonymous"></script>
+
 
 </body>
 </html>
